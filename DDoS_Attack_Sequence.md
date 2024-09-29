@@ -20,4 +20,5 @@ BotNet->>WebServer: DDoS attack
 BotNet->>WebServer: DDoS attack
 BotNet->>WebServer: DDoS attack
 WebServer->>Firewall: informs the firewall about the high cpu usage and high bandwidth use
+Firewall->>BotNet: Firewall notices unusual traffic and low bandwidth availability so it shuts down the ports where its receiving the traffic
 ```
